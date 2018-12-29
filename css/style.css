@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+html{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+}
+@keyframes grow {
+    from {box-shadow: 0;}
+    to {box-shadow: 1px 1px 40px 1px black;}
+}
+.btn-large {
+    animation: grow 1s infinite;
+}
+.background-image {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 60%);
+    background-image: url('../img/s44.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+}
+.content h1{
+    padding-top: 5rem;
+    text-shadow: 5px 5px 10px black;
+}
+.content p{
+    padding: 0rem 4rem 16rem 4rem;
+    text-shadow: 5px 5px 10px black;
+}
+.brand-logo img{
+    padding-left: 20px;
+    width: 5.5rem;
+    height: 2.2em;
+}
+.nav-wrapper{
+    top: 0;
+    position: fixed;
+}
+.nav-wrapper ul a{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.menu.scrolled {
+    background-color: #cf4a50 !important;
+    transition: background-color 500ms linear;
+}
+.menu{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.wrapper-3 span{
+    font-weight: bolder;
+    color: #ff7878;
+}
+.wrapper-3 a{
+    text-decoration: none !important;
+}
+.wrapper-3{
+    color: #fff;
+    display: grid;
+    grid-gap: 1em;
+}
+.wrapper-3 div{
+    padding: 3em;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,.30);
+}
+
+.wrapper-3 h2{
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+   	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+   				0px 8px 13px rgba(0,0,0,0.1),
+   				0px 18px 23px rgba(0,0,0,0.1) !important;
+}
+
+.wrapper-3 hr{
+    width: 200px;
+    float: left;
+    color: #333;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: 0; 
+    height: 2px; 
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.box-1{
+    grid-row: 1/4;
+    grid-column: 1/2;
+    background-color: #cf4a50;
+    min-height: 400px;
+    padding-top: 6rem !important;
+}
+.box-3{
+    padding-top: 2rem !important;
+    grid-row: 1/3;
+    grid-column: 2/4;
+    grid-area: 'box-3';
+    background-color: #b44147;   
+}
+.box-2{
+    grid-column: 2/4;
+    grid-area: 'box-2';
+    background-color: #333;
+}
+.projekat{
+    padding: 290px 50px 230px 50px; 
+}
+.parallax-container{
+    -webkit-clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 78%);
+    clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 78%);
+    height: 75vh;
+}
+.logos{
+    position: absolute;
+    width: 100%;
+}
+footer{
+    z-index: -1;
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 14%, 100% 100%, 0 100%);
+    max-width: 100%;
+    overflow-x: hidden;
+    z-index: -1; 
+    bottom: 0;
+}
+.kont{
+    padding-top: 30px !important;
+}
+.ic {
+    font-size: 2rem;
+}
+.ic:last-child {
+    margin-left: 1rem;
+}
+/* mapa */
+.maps{
+    -webkit-clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 78%);
+    clip-path: polygon(0 0%, 100% 0%, 100% 100%, 0 100%);
+    width: 100%;
+    height: 500px;
+}
+footer{
+    background: #CB356B;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #BD3F32, rgb(203, 53, 78)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#naslovi hr{
+    width: 200px;
+    float: left;
+    color: white;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: 0; 
+    height: 2px; 
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+#naslovi h2{
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+   	text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
+   				0px 8px 13px rgba(0,0,0,0.1),
+   				0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#naslovi-black hr{
+    width: 200px;
+    float: left;
+    color: rgb(0, 0, 0);
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+    border: 0; 
+    height: 2px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+
+}
+.hoverEF a img {
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hoverEF a:hover img {
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+#partneri{
+    margin-top: 70px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+#partneri .col{
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+#partneri img {
+    width:75%;
+}
+
+#organizatori{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+#organizatori img{
+    width: 60%;
+}
+
+
+#prijatelji{
+    margin-top: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 30px; 
+}
+#prijatelji img {
+    width: 55%;
+}
+
+
+/* fonis */
+.footer-copyright{
+    /* padding-left: 20px; */
+    margin-left: 15px;
+}
+
+.fonis{
+    color: orange;
+}
+.footer-copyright{
+    text-align: left;
+}
+
+.footer-top{
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+/* partneri-slike */
+#blur1, #blur2, #blur3{
+    background-color: white;
+    border-radius: 50%;
+    padding: 0;
+}
+.row{
+    text-align: center;
+}
+
+#fonis-logo-footer{
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    height: 20px;
+    width: auto;
+}
+
+@media (max-width: 850px){
+    .box-1{
+        
+        grid-column: 1/4;
+        grid-row: 1/2;
+        min-height: 200px;
+    }
+    .box-2{
+        grid-column: 1/4;
+        grid-row: 2/3;
+        
+        min-height: 200px;
+    }
+    .box-3{
+        grid-column: 1/4;
+        grid-row: 3/4;
+        min-height: 200px;
+    }
+}
