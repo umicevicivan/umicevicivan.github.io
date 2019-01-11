@@ -377,7 +377,11 @@ footer {
 }
 
 #prijatelji img {
-    width: 45%;
+    width: 60%;
+}
+
+.razmak{
+    margin-top: 20px;
 }
 
 #kontakt {
