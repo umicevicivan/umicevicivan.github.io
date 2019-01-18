@@ -65,10 +65,57 @@ body {
 }
 
 .content p {
-    padding: 0rem 4rem 16rem 4rem;
+    margin-bottom: 25px;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.9), 
                 0px 8px 13px rgba(0,0,0,0.4),
                 0px 18px 23px rgba(0,0,0,0.4);
+}
+
+.content a{
+    margin: 0rem 3rem 12rem 3rem;
+}
+
+.content .btn {
+  border-radius: 4px;
+  background-color: #BD3F32;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 0px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.content .btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.content .btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.content .btn:hover span {
+  padding-right: 25px;
+}
+
+.content .btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.content .btn:hover {
+    background-color: #BD3F32;
 }
 
 .brand-logo img {
@@ -203,6 +250,13 @@ body {
     -webkit-clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 78%);
     clip-path: polygon(0 0, 100% 27%, 100% 100%, 0 78%);
     height: 75vh;
+}
+
+#bq-desno{
+    border-left: hidden;
+    margin: 20px 0;
+    padding-right: 1.5rem;
+    border-right: 5px solid #ee6e73;
 }
 
 .logos {
@@ -380,9 +434,7 @@ footer {
     width: 60%;
 }
 
-.razmak{
-    margin-top: 20px;
-}
+
 
 #kontakt {
     padding-top: 60px;
@@ -492,7 +544,7 @@ footer {
     }
 
     .showcase p {
-        padding-bottom: 85px;
+        padding-bottom: 5px;
     }
 
     body {
@@ -506,6 +558,21 @@ footer {
     .card{
         height: auto;
     }
-        
+    
+
+
+    @media only screen and (max-width: 992px) {
+        #crta{
+            width: 250px !important;
+        }
+
+        .razmak{
+            margin-top: 20px;
+        }
+
+        .content a {
+            margin: 5px;
+        }
+    }
 
 }
