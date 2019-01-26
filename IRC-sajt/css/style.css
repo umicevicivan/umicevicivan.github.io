@@ -259,9 +259,22 @@ body {
     border-right: 5px solid #ee6e73;
 }
 
+.blockquote {
+    margin-top: 0px;
+}
+
+#slogan{
+    font-style: italic;
+}
+
 .logos {
     position: absolute;
     width: 100%;
+}
+
+.modal{
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 footer {
@@ -576,6 +589,10 @@ footer {
 
         .content a {
             margin: 5px;
+        }
+
+        .modal{
+            font-size: 0.9rem;
         }
     }
 
