@@ -1,11 +1,10 @@
 
 html {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
     scroll-behavior: smooth;
 }
 
 body {
+    font-family: 'Lora', serif;
     font-size: 1.3rem;
     padding: 0;
     margin: 0;
@@ -63,6 +62,14 @@ body {
     top: 0;
     /* -webkit-filter: blur(2px);filter: blur(2px); */
 
+}
+
+.linija{ 
+    margin-top: 50px;
+    border: 0; 
+    height: 1px; 
+    background: #333; 
+    background-image: linear-gradient(to right, #ccc, #333, #ccc); 
 }
 
 .content h1 {
@@ -172,12 +179,191 @@ body {
 
 }
 
-.responsive-img{
+#mape{
     border-radius: 10%;
+    
+}
+
+.polaroid {
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Safari */
+    transform: rotate(-7deg);
+}
+
+.polaroid .container {
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 7px;
+}
+
+.polaroid2 {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+  
+.polaroid2 .container {
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 7px;
+}
+
+.podnaslov{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.justify{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#test{
+    padding-top: 9%;
+}
+
+#test1{
+    padding-top: 6%;
+}
+
+ /* Style the Image Used to Trigger the Modal */
+ #myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid #ddd;  
+    padding: 5px;
+  }
+  
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+  /* #myImg:hover {opacity: 0.7;} */
+  
+  /* The Modal (background) */
+  .modal1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    margin-left: 25%;
+    margin-right: 25%;
+    left: 0;
+    top: 0;
+    width: 50%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    /* background-color: rgb(0,0,0); Fallback color */
+    background-color: rgba(0, 0, 0, 0.60); /* Black w/ opacity */
+    border-radius: 5%;
+  }
+  
+  /* Modal Content (Image) */
+  .modal1-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 500px;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal1-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 105px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  } 
+
+  footer {
+    -webkit-clip-path: polygon(50% 0%, 100% 12%, 100% 100%, 0 100%, 0 12%);
+    clip-path: polygon(50% 0%, 100% 12%, 100% 100%, 0 100%, 0 12%);
+    background: rgb(0,32,121);
+    background: linear-gradient(90deg, rgba(0,32,121,1) 0%, rgba(0,32,121,1) 18%, rgba(0,75,153,1) 53%, rgba(0,129,193,1) 79%, rgba(0,115,226,1) 100%);
+ 
+    /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(300deg, #e52d27 15%, #b31217 74%); */
+}
+
+#naslovi-black{
+    margin-top: 120px;
+}
+
+footer .card{
+    margin-top: 70px;
+}
+
+#razmak{
+    margin: 7px;
+}
+
+#card-action{
+    text-transform: none;
+    color: black;
+}
+
+#card-action:hover{
+    color: rgba(0, 0, 0, 0.548);
 }
 
 
-@media (max-width: 850px) {
+
+@media (max-width: 950px) {
     .background-image {
 
     -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 50%, 0 40%, 0 0);
@@ -228,5 +414,19 @@ body {
         grid-row: 3/4;
         min-height: 200px;
         padding-top: 50px !important;
+    }
+
+    .col {
+        margin-top: 20px;
+    }
+
+
+    footer {
+        -webkit-clip-path: polygon(50% 0%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+        clip-path: polygon(50% 0%, 100% 8%, 100% 100%, 0 100%, 0 8%);
+        background: rgb(0,32,121);
+        background: linear-gradient(90deg, rgba(0,32,121,1) 0%, rgba(0,32,121,1) 18%, rgba(0,75,153,1) 53%, rgba(0,129,193,1) 79%, rgba(0,115,226,1) 100%);
+        /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        /* background: linear-gradient(300deg, #e52d27 15%, #b31217 74%); */
     }
 }
