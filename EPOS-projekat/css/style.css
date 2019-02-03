@@ -64,8 +64,17 @@ body {
 
 }
 
-.linija{ 
-    margin-top: 50px;
+#naslovi{
+    display: inline-block;
+    margin-top: 120px;
+}
+
+#naslovi h2{
+    margin-bottom: 10px;
+}
+
+#naslovi hr{ 
+    margin-top: 0px;
     border: 0; 
     height: 1px; 
     background: #333; 
@@ -73,7 +82,7 @@ body {
 }
 
 .content h1 {
-    /* padding-top: 5rem; */
+    padding-top: 4rem;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.9), 
     0px 8px 13px rgba(0,0,0,0.4),
     0px 18px 23px rgba(0,0,0,0.4);
@@ -90,12 +99,16 @@ body {
     padding-top: 25px;
 }
 
+.razmak i{
+    font-size: 2rem;
+}
+
 .showcase{
     padding-top: 5%;
 }
 
 .info h2{
-    margin-top: 400px;
+    margin-top: 320px;
 }
 
 .wrapper-3 span {
@@ -340,9 +353,6 @@ body {
     /* background: linear-gradient(300deg, #e52d27 15%, #b31217 74%); */
 }
 
-#naslovi-black{
-    margin-top: 120px;
-}
 
 footer .card{
     margin-top: 70px;
@@ -370,8 +380,18 @@ footer .card{
     clip-path: polygon(50% 0%, 100% 0, 100% 40%, 50% 50%, 0 40%, 0 0);
     }
 
+    .brand-logo img {
+        padding-left: 0px;
+        padding-bottom: 3px;
+        padding-top: 5px;
+    }
+
     #obeogradu h2{
         font-size: 3.2rem;
+    }
+
+    .info h2 {
+        margin-top: 210px;
     }
 
     #položaj h2{
