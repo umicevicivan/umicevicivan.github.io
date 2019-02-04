@@ -127,7 +127,7 @@ body {
 .brand-logo img {
     padding-left: 20px;
     padding-bottom: 2px;
-    width: 5.5rem;
+    /* width: 5.5rem; */
     height: 2.2em;
 }
 
@@ -371,9 +371,16 @@ footer {
     padding-top: 25px;
 }
 
+#naslovi{
+    display: inline-block;
+}
+
+#naslovi-black{
+    display: inline-block;
+
+}
+
 #naslovi hr {
-    width: 200px;
-    float: left;
     color: white;
     padding-top: 0px;
     padding-left: 0px;
@@ -396,8 +403,6 @@ footer {
 }
 
 #naslovi-black hr {
-    width: 200px;
-    float: left;
     color: rgb(0, 0, 0);
     padding-top: 0px;
     padding-left: 0px;
@@ -541,6 +546,13 @@ footer {
         padding-right: 18px;
     }
 
+    .brand-logo img {
+        padding-left: 0px;
+        padding-bottom: 2px;
+        /*width: 5.5rem; */
+        height: 2.2em;
+    }
+
     .background-image {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 78%);
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 65%);
@@ -616,9 +628,9 @@ footer {
 
 
     @media only screen and (max-width: 992px) {
-        #crta{
+        /* #crta{
             width: 250px !important;
-        }
+        } */
 
         .razmak{
             margin-top: 20px;
