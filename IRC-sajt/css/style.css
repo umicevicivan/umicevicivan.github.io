@@ -371,6 +371,11 @@ footer {
     padding-top: 25px;
 }
 
+#info{
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
 #naslovi{
     display: inline-block;
 }
@@ -431,6 +436,10 @@ footer {
 
 #razmakBlog2{
     margin-top: 30px;
+}
+
+#razmak3{
+    margin-left: 75px;
 }
 
 .hoverEF a img {
@@ -624,6 +633,11 @@ footer {
     .card{
         height: auto;
     }
+
+    #razmak3{
+        margin-left: 25px;
+    }
+    
     
 
 
