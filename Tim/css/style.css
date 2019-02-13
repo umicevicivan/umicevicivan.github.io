@@ -75,13 +75,17 @@ body{
     font-size: 1rem;
     margin-top: 0.1rem;
 }
-#avatar a{
+.icons a{
     color: rgb(207, 206, 206);
     font-size: 1rem;
 }
 
 #razmak{
     margin: 7px;
+}
+
+.modal .icons a{
+    color: black;
 }
 
 
