@@ -276,6 +276,28 @@ body {
     border-right: 5px solid #ee6e73;
 }
 
+#pobednici{
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5;
+}
+
+#razmakPobednika{
+    margin-left: 50px;
+}
+
+#slikePobednika{
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#naslovi-black h4{
+    font-style: italic;
+}
+
 .blockquote {
     margin-top: 0px;
 }
