@@ -83,7 +83,12 @@
         </div>
 
     </div>
-
+    <!-- Skripe -->
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.corner.js"></script>
     <script>
         var gallery = document.querySelector('#gallery');
         var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
@@ -110,6 +115,14 @@
             item.addEventListener('click', function () {
                 item.classList.toggle('full');
             });
+        });
+
+        $(document).ready(function () {
+            $('.sidenav').sidenav();
+        });
+
+        $(document).ready(function () {
+            $('.fixed-action-btn').floatingActionButton();
         });
     </script>
 
