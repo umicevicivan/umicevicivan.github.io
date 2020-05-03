@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    scroll-behavior: smooth;
+    background: #2980b9; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #2980b9, #6dd5fa, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: no-repeat;
+
+}
+
+body {
+    font-family: 'Lora', serif;
+    font-size: 1.3rem;
+    padding: 0;
+    margin: 0;
+
+
+}
+
+@-webkit-keyframes grow {
+    from {
+        -webkit-box-shadow: 0;
+        box-shadow: 0;
+    }
+
+    to {
+        -webkit-box-shadow: 1px 1px 40px 1px black;
+        box-shadow: 1px 1px 40px 1px black;
+    }
+}
+
+@keyframes grow {
+    from {
+        -webkit-box-shadow: 0;
+        box-shadow: 0;
+    }
+
+    to {
+        -webkit-box-shadow: 1px 1px 40px 1px black;
+        box-shadow: 1px 1px 40px 1px black;
+    }
+}
+
+.btn-large {
+    -webkit-animation: grow 1s infinite;
+    animation: grow 1s infinite;
+}
+
+.background-image {
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 15% 100%);    /* background-image: url('../img/knjiga2.jpg'); */
+    background-color: #2980b9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    width: 100%;
+    height: 30vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: absolute;
+    top: 0;
+    
+}
+
+.content .btn:hover {
+    background-color: #BD3F32;
+}
+
+.brand-logo img {
+    padding-left: 20px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    /* width: 5.5rem; */
+    height: 4rem;
+}
+
+.ul li {
+    letter-spacing: 1px;
+}
+
+.nav-wrapper {
+    top: 0;
+    position: fixed;
+}
+
+.nav-wrapper ul a {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.menu.scrolled {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+    -webkit-transition: background-color 500ms linear;
+    -o-transition: background-color 500ms linear;
+    transition: background-color 500ms linear;
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, 0.25);
+    letter-spacing: 1px;
+
+}
+
+#naslovGlavni{
+    margin-top: 100px;
+}
+
+.podnaslov{
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.polaroid {
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    -ms-transform: rotate(-7deg); /* IE 9 */
+    -webkit-transform: rotate(-7deg); /* Safari */
+    transform: rotate(-7deg);
+}
+
+.polaroid .container {
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 7px;
+}
+
+.polaroid2 {
+    width: 60%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 25px;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+}
+  
+.polaroid2 .container {
+    text-align: center;
+    margin-top: 3px;
+    padding-bottom: 7px;
+}
+
+#naslovi{
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#naslovi h2{
+    margin-bottom: 10px;
+}
+
+#naslovi hr{ 
+    margin-top: 0px;
+    border: 0; 
+    height: 1px; 
+    background: #333; 
+    background-image: linear-gradient(to right, #ccc, #333, #ccc); 
+}
+
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+/* pahuljice */ 
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;		
+}
+
+/* video */
+#video{
+     margin-top: 30vh;
+}
+
+.recept{
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* mapa */
+.maps {
+
+    width: 100%;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.o_nama{
+    margin-top: 5vh;
+}
+
+@media (max-width: 1000px){
+
+    .background-image {
+        width: 100%;
+        height: 17vh;        
+    }
+
+    #video{
+        margin-top: 17vh;
+   }
+}
