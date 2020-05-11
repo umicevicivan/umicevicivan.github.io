@@ -121,6 +121,7 @@ body {
     -ms-transform: rotate(-7deg); /* IE 9 */
     -webkit-transform: rotate(-7deg); /* Safari */
     transform: rotate(-7deg);
+    margin: auto;
 }
 
 .polaroid .container {
@@ -137,6 +138,8 @@ body {
     -ms-transform: rotate(7deg); /* IE 9 */
     -webkit-transform: rotate(7deg); /* Safari */
     transform: rotate(7deg);
+    margin: auto;
+
 }
   
 .polaroid2 .container {
