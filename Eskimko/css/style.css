@@ -105,7 +105,7 @@ body {
 }
 
 #naslovGlavni{
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
 .podnaslov{
@@ -214,10 +214,11 @@ color: #000;
         height: 30vh;
     }
     #naslovGlavni{
-        margin-top: 85px;
+        margin-top: 80px;
     }
 
     #video{
         margin-top: 30vh;
    }
+
 }
