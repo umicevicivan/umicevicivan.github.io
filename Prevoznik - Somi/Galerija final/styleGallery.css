@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+  }
+
+  /* Slika kada je kliknuta */
+  .slike{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+
+  .numbertext{
+    color: black;
+  }
+
+  .container {
+    position: relative;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Levo/Desno dugmad */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 40px;
+    margin-top: -50px;
+    color: white !important;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Tekst onaj u cosku od likse (1/15) */
+
+  .pozadinaSlike{
+    background-color: black;
+  }
+
+  .numbertext {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Slike dole kada su */
+  .slike1 {
+    height: 300px;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  /* Efekat za slike*/
+  .demo {
+    opacity: 0.6;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 100%;
+    min-width: 100%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+  @media screen and (max-width: 992px) {
+    .slike1 {
+      height: 100px;
+    }
+
+    .prev,
+    .next {
+      top: 10%;
+
+  }
+
+  @media screen and (max-width: 1200px) {
+    .slike1 {
+      height: 180px;
+    }
+  }
